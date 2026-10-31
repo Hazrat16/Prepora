@@ -59,6 +59,17 @@ export async function revealAnswer(questionId: string) {
   return { blocked: false as const, correctOptionId: data?.correct_option_id, explanation: data?.explanation_bn };
 }
 
+export async function setMistakeResolved(questionId: string, resolved: boolean) {
+  const { user } = await requireUser();
+  await createAdminClient()
+    .from("mistake_notebook")
+    .update({ resolved_at: resolved ? new Date().toISOString() : null })
+    .eq("user_id", user.id)
+    .eq("question_id", questionId);
+  revalidatePath("/mistakes");
+  revalidatePath("/dashboard");
+}
+
 export async function updateProfile(
   _: { error?: string; message?: string },
   form: FormData,

@@ -138,6 +138,26 @@ export async function startPaper(paperId: string) {
   redirect(`/attempt/${attemptId}`);
 }
 
+export async function startDueReview() {
+  const { supabase, user } = await requireUser();
+  const { data: due } = await supabase
+    .from("mistake_notebook")
+    .select("question_id")
+    .is("resolved_at", null)
+    .lte("next_review_at", new Date().toISOString())
+    .order("next_review_at")
+    .limit(20);
+  if (!due?.length) redirect("/mistakes");
+
+  const attemptId = await createAttempt({
+    userId: user.id,
+    mode: "practice",
+    title: "ভুল রিভিশন",
+    questions: due.map((row) => ({ id: row.question_id, sectionName: "", marks: 1, negativeMarks: 0 })),
+  });
+  redirect(`/attempt/${attemptId}`);
+}
+
 async function ownedAttempt(attemptId: string) {
   const { user } = await requireUser();
   const { data } = await createAdminClient()

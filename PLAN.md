@@ -147,8 +147,8 @@ Total: 30 to 40 working days, because stages 2 to 4 can overlap.
 - [ ] Build repeated question analysis, separating exact repeats from similar concepts
 
 ### Phase 7: Personal learning tools (2 days)
-- [ ] Build My Mistakes with retry, resolve and repeat tracking
-- [ ] Add spaced repetition at 1, 3, 7 and 14 days, adjusted by performance
+- [x] Build My Mistakes with retry, resolve and repeat tracking
+- [x] Add spaced repetition at 1, 3, 7 and 14 days, adjusted by performance
 - [ ] Build the planner, calendar, daily targets, streaks and editable routine
 
 ### Phase 8: Analytics (1 day)
@@ -212,3 +212,6 @@ step, so work continues without rewriting anything.
   warning. See `DEPLOYMENT-NOTES.md`.
 - 2026-10-31: Imported 2 LiveMCQ papers by reading page images: 08-12-2023 and 02-02-2024.
   Next step: read the 29-03-2024 paper, then the three 2022 papers, then older years.
+- 2026-10-31: My Mistakes and spaced repetition built. Third paper imported (29-03-2024;
+  the PDF says 30 March, Satt Academy says 29 March). Next step: the three 2022 papers,
+  then Beginner lessons for the topics real papers ask most, then planner and analytics.

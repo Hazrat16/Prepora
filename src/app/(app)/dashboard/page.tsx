@@ -60,7 +60,7 @@ export default async function DashboardPage() {
         <Button asChild><Link href={nextHref}><BookOpen />শেখা চালিয়ে যান</Link></Button>
         <Button asChild variant="outline"><Link href="/practice"><Target />অনুশীলন</Link></Button>
         <Button asChild variant="outline"><Link href="/mock-exams"><ClipboardCheck />মক পরীক্ষা</Link></Button>
-        <Button asChild variant="outline"><Link href="/practice?source=incorrect"><RotateCcw />ভুলগুলো দেখুন</Link></Button>
+        <Button asChild variant="outline"><Link href="/mistakes"><RotateCcw />ভুলগুলো দেখুন{stats.dueReviews > 0 && ` (${bn(stats.dueReviews)})`}</Link></Button>
       </div>
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">

@@ -22,7 +22,7 @@ export function preparationLevel(attempted: number, percent: number) {
 }
 
 export async function getDashboardStats(supabase: SupabaseClient) {
-  const [{ data: attempts }, { data: answers }, { data: completed }, { data: lessons }, { data: subjects }] =
+  const [{ data: attempts }, { data: answers }, { data: completed }, { data: lessons }, { data: subjects }, { count: dueReviews }] =
     await Promise.all([
       supabase
         .from("attempts")
@@ -39,6 +39,11 @@ export async function getDashboardStats(supabase: SupabaseClient) {
         .from("lessons")
         .select("id, title, estimated_minutes, topics!inner(slug, position, subjects!inner(slug, position))"),
       supabase.from("subjects").select("id, name_bn").order("position"),
+      supabase
+        .from("mistake_notebook")
+        .select("question_id", { count: "exact", head: true })
+        .is("resolved_at", null)
+        .lte("next_review_at", new Date().toISOString()),
     ]);
 
   const submitted = attempts ?? [];
@@ -119,6 +124,7 @@ export async function getDashboardStats(supabase: SupabaseClient) {
     lessonsTotal: allLessons.length,
     streak: currentStreak(activeDays),
     answeredToday,
+    dueReviews: dueReviews ?? 0,
     week,
     subjectStats,
     weakest: ranked[0],

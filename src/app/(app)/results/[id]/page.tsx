@@ -129,7 +129,7 @@ export default async function ResultsPage({ params }: { params: Promise<{ id: st
       </div>
 
       <div className="flex flex-wrap gap-3">
-        <Button asChild><Link href="/practice?source=incorrect">ভুলগুলো আবার অনুশীলন করুন</Link></Button>
+        <Button asChild><Link href="/mistakes">আমার ভুলগুলো দেখুন</Link></Button>
         <Button asChild variant="outline"><Link href="/dashboard">ড্যাশবোর্ডে যান</Link></Button>
       </div>
 

@@ -1,4 +1,5 @@
 import "server-only";
+import { nextRevision } from "@/lib/revision";
 import { scoreAnswers, shuffle } from "@/lib/scoring";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -14,7 +15,7 @@ export async function submitAttempt(attemptId: string, auto = false) {
   const admin = createAdminClient();
   const { data: attempt } = await admin
     .from("attempts")
-    .select("id, status")
+    .select("id, status, user_id")
     .eq("id", attemptId)
     .single();
   if (!attempt || attempt.status === "submitted") return;
@@ -70,6 +71,42 @@ export async function submitAttempt(attemptId: string, auto = false) {
     })
     .eq("id", attemptId)
     .eq("status", "in_progress");
+
+  await updateMistakes(
+    attempt.user_id,
+    answered.map((q) => ({ questionId: q.question_id, correct: isRight(q) })),
+  );
+}
+
+async function updateMistakes(userId: string, answers: { questionId: string; correct: boolean }[]) {
+  const admin = createAdminClient();
+  const { data: existing } = await admin
+    .from("mistake_notebook")
+    .select("question_id, wrong_count, last_wrong_at, interval_step, next_review_at, resolved_at")
+    .eq("user_id", userId)
+    .in("question_id", answers.map((a) => a.questionId));
+  const byQuestion = new Map(existing?.map((row) => [row.question_id, row]));
+  const now = new Date();
+
+  const rows = answers.flatMap(({ questionId, correct }) => {
+    const row = byQuestion.get(questionId);
+    // A right answer only counts as revision once the question is due.
+    if (correct && (!row || row.resolved_at || new Date(row.next_review_at) > now)) return [];
+
+    const state = nextRevision(row?.interval_step ?? 0, correct, now);
+    return [{
+      user_id: userId,
+      question_id: questionId,
+      wrong_count: (row?.wrong_count ?? 0) + (correct ? 0 : 1),
+      last_wrong_at: correct ? row!.last_wrong_at : now.toISOString(),
+      interval_step: state.intervalStep,
+      next_review_at: state.nextReviewAt.toISOString(),
+      resolved_at: state.resolved ? now.toISOString() : null,
+    }];
+  });
+  if (rows.length === 0) return;
+  const { error } = await admin.from("mistake_notebook").upsert(rows);
+  if (error) throw new Error(error.message);
 }
 
 type NewQuestion = { id: string; sectionName: string; marks: number; negativeMarks: number };

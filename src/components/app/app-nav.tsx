@@ -1,6 +1,6 @@
 "use client";
 
-import { Archive, BookOpen, ClipboardCheck, Database, LayoutDashboard, Target, UserRound } from "lucide-react";
+import { Archive, BookOpen, BookX, ClipboardCheck, Database, LayoutDashboard, Target, UserRound } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -12,6 +12,7 @@ const ITEMS = [
   { href: "/question-bank", label: "প্রশ্ন ব্যাংক", short: "প্রশ্ন", icon: Database },
   { href: "/previous-questions", label: "পূর্ববর্তী বছরের প্রশ্ন", short: "বিগত", icon: Archive },
   { href: "/mock-exams", label: "মক পরীক্ষা", short: "মক", icon: ClipboardCheck },
+  { href: "/mistakes", label: "আমার ভুলগুলো", short: "ভুল", icon: BookX },
   { href: "/profile", label: "প্রোফাইল", short: "প্রোফাইল", icon: UserRound },
 ];
 
@@ -21,7 +22,7 @@ export function AppNav({ variant }: { variant: "sidebar" | "bottom" }) {
 
   if (variant === "bottom") {
     return (
-      <nav aria-label="প্রধান মেনু" className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-7 border-t bg-card md:hidden">
+      <nav aria-label="প্রধান মেনু" className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-8 border-t bg-card md:hidden">
         {ITEMS.map(({ href, short, icon: Icon }) => (
           <Link
             key={href}
