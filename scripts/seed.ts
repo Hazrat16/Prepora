@@ -1,6 +1,6 @@
 // Loads content/ into the database. Safe to re-run: it upserts content and
 // never touches user data.
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { createClient } from "@supabase/supabase-js";
 
@@ -141,6 +141,86 @@ async function seedQuestions(topicIds: Map<string, string>) {
   return count;
 }
 
+type PaperQuestion = {
+  topic: string;
+  d?: "easy" | "medium" | "hard";
+  q: string;
+  original?: string;
+  o: string[];
+  a: number | null;
+  e?: string;
+  status?: "verified_official" | "verified_secondary" | "unverified" | "needs_review";
+};
+
+// One JSON file per paper in content/archive/papers. A question with no answer
+// is stored for review but stays unpublished: answers are never guessed.
+async function seedPapers(topicIds: Map<string, string>) {
+  const dir = "content/archive/papers";
+  if (!existsSync(dir)) return 0;
+  const files = readdirSync(dir).filter((file) => file.endsWith(".json"));
+  for (const file of files) {
+    const { questions, ...meta } = read(`archive/papers/${file}`) as Record<string, unknown> & {
+      slug: string;
+      source_url?: string;
+      questions: PaperQuestion[];
+    };
+    const paper = await must(
+      db.from("examination_papers").upsert(meta, { onConflict: "slug" }).select("id").single(),
+    );
+    for (const [position, q] of questions.entries()) {
+      const topicId = topicIds.get(q.topic);
+      if (!topicId) throw new Error(`Unknown topic ${q.topic} in ${file}`);
+      if (q.o.length !== 4) throw new Error(`Question ${position + 1} in ${file} needs 4 options`);
+      const row = await must(
+        db
+          .from("questions")
+          .upsert(
+            {
+              external_id: `${meta.slug}-${position + 1}`,
+              topic_id: topicId,
+              collection: "previous_year",
+              difficulty: q.d ?? "medium",
+              language: /[a-z]{3}/i.test(q.q) ? "en" : "bn",
+              text: q.q,
+              original_text: q.original ?? q.q,
+              source_label: String(meta.source_name),
+              source_url: meta.source_url ?? "",
+              verification_status: q.a === null ? "needs_review" : (q.status ?? "unverified"),
+              is_published: q.a !== null,
+            },
+            { onConflict: "external_id" },
+          )
+          .select("id")
+          .single(),
+      );
+      const options = await must(
+        db
+          .from("question_options")
+          .upsert(
+            q.o.map((text, index) => ({ question_id: row.id, position: index, text })),
+            { onConflict: "question_id,position" },
+          )
+          .select("id, position"),
+      );
+      if (q.a !== null) {
+        await must(
+          db.from("question_answers").upsert({
+            question_id: row.id,
+            correct_option_id: options.find((o) => o.position === q.a)!.id,
+            explanation_bn: q.e ?? "",
+          }),
+        );
+      }
+      await must(
+        db
+          .from("examination_paper_questions")
+          .upsert({ paper_id: paper.id, question_id: row.id, position }),
+      );
+    }
+  }
+  return files.length;
+}
+
 async function seedMockExams() {
   const exams = read("mock-exams.json");
   for (const { sections, ...exam } of exams) {
@@ -166,7 +246,8 @@ async function main() {
   const lessons = await seedLessons(topicIds);
   const questions = await seedQuestions(topicIds);
   const exams = await seedMockExams();
-  console.log(`Seeded ${topicIds.size} topics, ${lessons} lessons, ${questions} questions, ${exams} mock exams.`);
+  const papers = await seedPapers(topicIds);
+  console.log(`Seeded ${topicIds.size} topics, ${lessons} lessons, ${questions} questions, ${exams} mock exams, ${papers} past papers.`);
 }
 
 main().catch((error) => {

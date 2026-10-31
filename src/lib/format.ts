@@ -47,4 +47,11 @@ export function currentStreak(activeDays: Iterable<string>, today: Date = new Da
   return streak;
 }
 
+export const VERIFICATION_LABELS = {
+  verified_official: "সরকারিভাবে যাচাইকৃত",
+  verified_secondary: "নির্ভরযোগ্য সূত্রে যাচাইকৃত",
+  unverified: "অযাচাইকৃত",
+  needs_review: "পর্যালোচনা প্রয়োজন",
+} as const;
+
 export const DIFFICULTY_LABELS = { easy: "সহজ", medium: "মাঝারি", hard: "কঠিন" } as const;

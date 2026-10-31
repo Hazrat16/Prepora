@@ -67,6 +67,9 @@ Your data is kept. `make stop` is only needed if Supabase was left running.
 
 ## Optional free online deployment
 
+**Read `DEPLOYMENT-NOTES.md` first.** The app contains LiveMCQ material that must be
+disclosed and cleared or removed before any deployment or sharing.
+
 Only if needed later: Vercel Hobby, the Supabase free tier and a free
 `*.vercel.app` address. Check the current free-tier limits first. Supabase free
 projects can pause when idle, and scanned PDFs may need to stay local to fit
@@ -136,9 +139,9 @@ Total: 30 to 40 working days, because stages 2 to 4 can overlap.
 ## Stage 2: Complete software
 
 ### Phase 5: Archive tools (3 to 4 days)
-- [ ] Build the source register and coverage report
-- [ ] Build the Previous Year Questions pages and filters
-- [ ] Build Previous Year Exam Mode, labelling incomplete papers
+- [x] Build the source register and coverage report
+- [x] Build the Previous Year Questions pages (filters still to do)
+- [x] Build Previous Year Exam Mode, labelling incomplete papers
 - [ ] Build CSV, Excel, JSON and PDF import, plus OCR
 - [ ] Build duplicate detection and classification suggestions
 - [ ] Build repeated question analysis, separating exact repeats from similar concepts
@@ -167,7 +170,8 @@ Total: 30 to 40 working days, because stages 2 to 4 can overlap.
 
 ## Stage 3: Historical archive
 
-- [ ] Search papers year by year, and record every source and result
+- [x] First search done: `content/archive/source-register.json` lists papers found (metadata only)
+- [ ] Finish the search and mark each year
 - [ ] Mark each year verified, partial, unverified or not found
 - [ ] Import only legally accessible material
 - [ ] Review OCR, confirm answers and add Bangla explanations
@@ -194,7 +198,17 @@ step, so work continues without rewriting anything.
   Practice and mock attempts share `attempts` and `attempt_questions` instead of
   the separate tables in the spec, so both use one exam engine. The mock exam
   structure follows press reports of the 2025 Recruitment Rules: 90 written
-  marks (25/25/20/20), 90 minutes, 45 to pass. Negative marking is unconfirmed
-  and set to 0. Until the admin panel exists, edit `content/mock-exams.json` and
+  marks (25/25/20/20), 90 minutes, 45 to pass, and 0.5 off per wrong answer. Until the admin panel exists, edit `content/mock-exams.json` and
   run `make seed`. `make backup` creates a dump, but restoring one is untested.
   Next step: start Phase 7, or Phase 5 if the exam is close.
+- 2026-10-31: Archive survey done. Satt Academy terms forbid building on its content,
+  so it is not bulk copied. No past-paper questions imported yet. Next step: user
+  decides the import source.
+- 2026-10-31: Archive schema, Previous Year pages, Exam Mode and the JSON paper importer
+  are built and tested. LiveMCQ PDFs carry an explicit no-use-without-permission
+  warning, so nothing was imported. Files go in `content/archive/papers/`, which
+  Git ignores. PDF, OCR and admin import screens are not built yet.
+- 2026-10-31: Owner chose to import LiveMCQ papers for local use only, after seeing the
+  warning. See `DEPLOYMENT-NOTES.md`.
+- 2026-10-31: Imported 2 LiveMCQ papers by reading page images: 08-12-2023 and 02-02-2024.
+  Next step: read the 29-03-2024 paper, then the three 2022 papers, then older years.

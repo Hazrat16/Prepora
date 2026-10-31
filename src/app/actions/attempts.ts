@@ -13,21 +13,24 @@ const practiceInput = z.object({
   difficulty: z.enum(["easy", "medium", "hard"]).optional(),
   count: z.coerce.number().pipe(z.union([z.literal(5), z.literal(10), z.literal(20), z.literal(30), z.literal(50)])),
   source: z.enum(["all", "unanswered", "incorrect", "bookmarked"]),
+  collection: z.enum(["practice", "previous_year"]).default("practice"),
 });
 
 export async function startPractice(_: { error?: string }, form: FormData): Promise<{ error?: string }> {
   const raw = Object.fromEntries([...form].filter(([, value]) => value !== ""));
   const parsed = practiceInput.safeParse(raw);
   if (!parsed.success) return { error: "সব তথ্য ঠিকভাবে নির্বাচন করুন।" };
-  const { subject_id, topic_id, difficulty, count, source } = parsed.data;
+  const { subject_id, topic_id, difficulty, count, source, collection } = parsed.data;
 
   const { supabase, user } = await requireUser();
 
   let query = supabase
     .from("questions")
     .select("id, topics!inner(subject_id)")
-    .eq("is_published", true)
-    .neq("collection", "previous_year");
+    .eq("is_published", true);
+  query = collection === "previous_year"
+    ? query.eq("collection", "previous_year")
+    : query.neq("collection", "previous_year");
   if (topic_id) query = query.eq("topic_id", topic_id);
   else if (subject_id) query = query.eq("topics.subject_id", subject_id);
   if (difficulty) query = query.eq("difficulty", difficulty);
@@ -58,7 +61,7 @@ export async function startPractice(_: { error?: string }, form: FormData): Prom
   const attemptId = await createAttempt({
     userId: user.id,
     mode: "practice",
-    title: "অনুশীলন",
+    title: collection === "previous_year" ? "পূর্ববর্তী বছরের প্রশ্ন অনুশীলন" : "অনুশীলন",
     questions: shuffle(ids)
       .slice(0, count)
       .map((id) => ({ id, sectionName: "", marks: 1, negativeMarks: 0 })),
@@ -97,6 +100,40 @@ export async function startMockExam(examId: string) {
     mockExamId: exam.id,
     durationMinutes: exam.duration_minutes,
     questions,
+  });
+  redirect(`/attempt/${attemptId}`);
+}
+
+// Keeps the paper's own order. Papers with an unverified time limit run untimed.
+export async function startPaper(paperId: string) {
+  const { supabase, user } = await requireUser();
+  const { data: paper } = await supabase
+    .from("examination_papers")
+    .select("id, title, duration_minutes, negative_marks, examination_paper_questions(question_id, position, questions(is_published))")
+    .eq("id", paperId)
+    .single();
+  if (!paper) redirect("/previous-questions");
+
+  const rows = (paper.examination_paper_questions as unknown as {
+    question_id: string;
+    position: number;
+    questions: { is_published: boolean } | null;
+  }[])
+    .filter((row) => row.questions?.is_published)
+    .sort((a, b) => a.position - b.position);
+  if (rows.length === 0) redirect(`/previous-questions/paper/${paperId}`);
+
+  const attemptId = await createAttempt({
+    userId: user.id,
+    mode: "mock",
+    title: paper.title,
+    durationMinutes: paper.duration_minutes ?? undefined,
+    questions: rows.map((row) => ({
+      id: row.question_id,
+      sectionName: "",
+      marks: 1,
+      negativeMarks: Number(paper.negative_marks),
+    })),
   });
   redirect(`/attempt/${attemptId}`);
 }

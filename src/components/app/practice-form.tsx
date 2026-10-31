@@ -59,6 +59,13 @@ export function PracticeForm({
         </select>
       </div>
       <div className="space-y-1.5">
+        <Label htmlFor="collection">প্রশ্নের ধরন</Label>
+        <select id="collection" name="collection" className={selectClass} defaultValue="practice">
+          <option value="practice">অনুশীলনের প্রশ্ন</option>
+          <option value="previous_year">পূর্ববর্তী বছরের প্রশ্ন</option>
+        </select>
+      </div>
+      <div className="space-y-1.5">
         <Label htmlFor="count">প্রশ্নের সংখ্যা</Label>
         <select id="count" name="count" className={selectClass} defaultValue={defaultTopic ? "5" : "10"}>
           {[5, 10, 20, 30, 50].map((n) => <option key={n} value={n}>{bn(n)}টি</option>)}

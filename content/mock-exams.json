@@ -1,16 +1,98 @@
 [
- {"slug":"primary-full-2025-rules","name":"পূর্ণাঙ্গ মডেল টেস্ট","description":"২০২৫ সালের বিধিমালা অনুযায়ী প্রতিবেদিত কাঠামো: ৯০ নম্বর, ৯০ মিনিট।","duration_minutes":90,"pass_marks":45,"position":1,
-  "source_note":"বিষয়ভিত্তিক নম্বর, সময় ও পাস নম্বর সরকারি প্রাথমিক বিদ্যালয় শিক্ষক নিয়োগ বিধিমালা ২০২৫ সম্পর্কে সংবাদ প্রতিবেদন থেকে নেওয়া। প্রতি প্রশ্নে ১ নম্বর ধরা হয়েছে। নেগেটিভ মার্কিং নিশ্চিত হওয়া যায়নি, তাই ০ রাখা হয়েছে। মূল বিজ্ঞপ্তি দেখে মিলিয়ে নিন।",
-  "sections":[
-   {"name":"বাংলা","subject_slugs":["bangla"],"question_count":25,"marks_per_question":1,"negative_marks":0},
-   {"name":"ইংরেজি","subject_slugs":["english"],"question_count":25,"marks_per_question":1,"negative_marks":0},
-   {"name":"গণিত ও দৈনন্দিন বিজ্ঞান","subject_slugs":["math","science-ict"],"question_count":20,"marks_per_question":1,"negative_marks":0},
-   {"name":"সাধারণ জ্ঞান","subject_slugs":["gk"],"question_count":20,"marks_per_question":1,"negative_marks":0}]},
- {"slug":"mini-mock-30","name":"মিনি মক টেস্ট","description":"অল্প সময়ে প্রস্তুতি যাচাই: ৩০ নম্বর, ৩০ মিনিট।","duration_minutes":30,"pass_marks":15,"position":2,
-  "source_note":"এটি অনুশীলনের জন্য তৈরি সংক্ষিপ্ত পরীক্ষা, আসল পরীক্ষার কাঠামো নয়।",
-  "sections":[
-   {"name":"বাংলা","subject_slugs":["bangla"],"question_count":8,"marks_per_question":1,"negative_marks":0},
-   {"name":"ইংরেজি","subject_slugs":["english"],"question_count":8,"marks_per_question":1,"negative_marks":0},
-   {"name":"গণিত ও দৈনন্দিন বিজ্ঞান","subject_slugs":["math","science-ict"],"question_count":7,"marks_per_question":1,"negative_marks":0},
-   {"name":"সাধারণ জ্ঞান","subject_slugs":["gk"],"question_count":7,"marks_per_question":1,"negative_marks":0}]}
+ {
+  "slug": "primary-full-2025-rules",
+  "name": "পূর্ণাঙ্গ মডেল টেস্ট",
+  "description": "২০২৫ সালের বিধিমালা অনুযায়ী প্রতিবেদিত কাঠামো: ৯০ নম্বর, ৯০ মিনিট।",
+  "duration_minutes": 90,
+  "pass_marks": 45,
+  "position": 1,
+  "source_note": "বিষয়ভিত্তিক নম্বর, ৯০ মিনিট সময়, ৫০% পাস নম্বর এবং প্রতি ভুলে ০.৫ নম্বর কাটা প্রথম আলোর ২০২৫ বিধিমালাভিত্তিক প্রতিবেদন থেকে নেওয়া। প্রতি প্রশ্নে ১ নম্বর ধরা হয়েছে, এটি প্রতিবেদনে বলা নেই। মূল বিজ্ঞপ্তি দেখে মিলিয়ে নিন।",
+  "sections": [
+   {
+    "name": "বাংলা",
+    "subject_slugs": [
+     "bangla"
+    ],
+    "question_count": 25,
+    "marks_per_question": 1,
+    "negative_marks": 0.5
+   },
+   {
+    "name": "ইংরেজি",
+    "subject_slugs": [
+     "english"
+    ],
+    "question_count": 25,
+    "marks_per_question": 1,
+    "negative_marks": 0.5
+   },
+   {
+    "name": "গণিত ও দৈনন্দিন বিজ্ঞান",
+    "subject_slugs": [
+     "math",
+     "science-ict"
+    ],
+    "question_count": 20,
+    "marks_per_question": 1,
+    "negative_marks": 0.5
+   },
+   {
+    "name": "সাধারণ জ্ঞান",
+    "subject_slugs": [
+     "gk"
+    ],
+    "question_count": 20,
+    "marks_per_question": 1,
+    "negative_marks": 0.5
+   }
+  ]
+ },
+ {
+  "slug": "mini-mock-30",
+  "name": "মিনি মক টেস্ট",
+  "description": "অল্প সময়ে প্রস্তুতি যাচাই: ৩০ নম্বর, ৩০ মিনিট।",
+  "duration_minutes": 30,
+  "pass_marks": 15,
+  "position": 2,
+  "source_note": "এটি অনুশীলনের জন্য তৈরি সংক্ষিপ্ত পরীক্ষা, আসল পরীক্ষার কাঠামো নয়।",
+  "sections": [
+   {
+    "name": "বাংলা",
+    "subject_slugs": [
+     "bangla"
+    ],
+    "question_count": 8,
+    "marks_per_question": 1,
+    "negative_marks": 0
+   },
+   {
+    "name": "ইংরেজি",
+    "subject_slugs": [
+     "english"
+    ],
+    "question_count": 8,
+    "marks_per_question": 1,
+    "negative_marks": 0
+   },
+   {
+    "name": "গণিত ও দৈনন্দিন বিজ্ঞান",
+    "subject_slugs": [
+     "math",
+     "science-ict"
+    ],
+    "question_count": 7,
+    "marks_per_question": 1,
+    "negative_marks": 0
+   },
+   {
+    "name": "সাধারণ জ্ঞান",
+    "subject_slugs": [
+     "gk"
+    ],
+    "question_count": 7,
+    "marks_per_question": 1,
+    "negative_marks": 0
+   }
+  ]
+ }
 ]

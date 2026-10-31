@@ -1,0 +1,993 @@
+{
+ "checked_on": "2026-10-31",
+ "note": "Metadata only. No questions are stored here. Listed marks are a source claim, not verified, and this list may be incomplete.",
+ "sources": {
+  "sattacademy": {
+   "terms": "Content owned by the site; personal non-commercial use; users may not build new things from it.",
+   "use": "Index and answer cross-checks by hand only; do not bulk copy.",
+   "papers": [
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক মুক্তিযোদ্ধা কোটা 2010 বসন্ত 03 10 08 2010",
+     "exam_type": "freedom_fighter_quota",
+     "year_in_name": 2010,
+     "date_listed": "১০-০৮-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-মুক্তিযোদ্ধা-কোটা-2010-বসন্ত-03-10-08-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক মুক্তিযোদ্ধা কোটা 2010 শরৎ 01 09 08 2010",
+     "exam_type": "freedom_fighter_quota",
+     "year_in_name": 2010,
+     "date_listed": "০৯-০৮-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-মুক্তিযোদ্ধা-কোটা-2010-শরৎ-01-09-08-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক মুক্তিযোদ্ধা কোটা 2010 হেমন্ত 02 08 08 2010",
+     "exam_type": "freedom_fighter_quota",
+     "year_in_name": 2010,
+     "date_listed": "০৮-০৮-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-মুক্তিযোদ্ধা-কোটা-2010-হেমন্ত-02-08-08-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 ঝিলাম 02 10 11 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১০-১১-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-ঝিলাম-02-10-11-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 দাজলা 04 11 11 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১১-১১-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-দাজলা-04-11-11-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 দানিয়ুব 03 08 11 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "০৮-১১-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-দানিয়ুব-03-08-11-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 পদ্মা 01 14 04 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১৪-০৪-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-পদ্মা-01-14-04-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 বুড়িগঙ্গা 07 08 04 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "০৮-০৪-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-বুড়িগঙ্গা-07-08-04-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 ভলগা 06 13 11 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১৩-১১-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-ভলগা-06-13-11-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 মিসিসিপি 05 12 11 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১২-১১-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-মিসিসিপি-05-12-11-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 মেঘনা 02 13 04 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১৩-০৪-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-মেঘনা-02-13-04-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 যমুনা 03 12 04 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১২-০৪-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-যমুনা-03-12-04-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 শীতলক্ষ্যা 06 09 04 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "০৯-০৪-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-শীতলক্ষ্যা-06-09-04-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 সুরমা 04 11 04 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "১১-০৪-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-সুরমা-04-11-04-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2013 হোয়াংহো 01 09 11 2013",
+     "exam_type": "pre_primary",
+     "year_in_name": 2013,
+     "date_listed": "০৯-১১-২০১৩",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2013-হোয়াংহো-01-09-11-2013/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2014 আলফা 01 19 04 2014",
+     "exam_type": "pre_primary",
+     "year_in_name": 2014,
+     "date_listed": "১৯-০৪-২০১৪",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2014-আলফা-01-19-04-2014/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2014 গামা 03 21 04 2014",
+     "exam_type": "pre_primary",
+     "year_in_name": 2014,
+     "date_listed": "২১-০৪-২০১৪",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2014-গামা-03-21-04-2014/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2014 ডেলটা 04 18 04 2014",
+     "exam_type": "pre_primary",
+     "year_in_name": 2014,
+     "date_listed": "১৮-০৪-২০১৪",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2014-ডেলটা-04-18-04-2014/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2014 বিটা 02 20 04 2014",
+     "exam_type": "pre_primary",
+     "year_in_name": 2014,
+     "date_listed": "২০-০৪-২০১৪",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2014-বিটা-02-20-04-2014/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2015 ১৭ জেলা 01 30 10 2015",
+     "exam_type": "pre_primary",
+     "year_in_name": 2015,
+     "date_listed": "৩০-১০-২০১৫",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2015-১৭-জেলা-01-30-10-2015/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2015 ১৭ জেলা 03 28 08 2015",
+     "exam_type": "pre_primary",
+     "year_in_name": 2015,
+     "date_listed": "২৮-০৮-২০১৫",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2015-১৭-জেলা-03-28-08-2015/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2015 ২০ জেলা 02 16 10 2015",
+     "exam_type": "pre_primary",
+     "year_in_name": 2015,
+     "date_listed": "১৬-১০-২০১৫",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2015-২০-জেলা-02-16-10-2015/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2015 ৫ জেলা 04 27 06 2015",
+     "exam_type": "pre_primary",
+     "year_in_name": 2015,
+     "date_listed": "২৭-০৬-২০১৫",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2015-৫-জেলা-04-27-06-2015/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাক প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2016 মুক্তিযোদ্ধা কোটা 29 10 2016",
+     "exam_type": "pre_primary",
+     "year_in_name": 2016,
+     "date_listed": "২৯-১০-২০১৬",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাক-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2016-মুক্তিযোদ্ধা-কোটা-29-10-2016/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2005 খুলনা বিভাগ 04 23 08 2005",
+     "exam_type": "primary",
+     "year_in_name": 2005,
+     "date_listed": "২৩-০৮-২০০৫",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2005-খুলনা-বিভাগ-04-23-08-2005/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2005 বরিশাল বিভাগ 05 22 08 2005",
+     "exam_type": "primary",
+     "year_in_name": 2005,
+     "date_listed": "২২-০৮-২০০৫",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2005-বরিশাল-বিভাগ-05-22-08-2005/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2005 রাজশাহী বিভাগ 03 24 08 2005",
+     "exam_type": "primary",
+     "year_in_name": 2005,
+     "date_listed": "২৪-০৮-২০০৫",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2005-রাজশাহী-বিভাগ-03-24-08-2005/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2005 সিলেট বিভাগ 06 21 08 2005",
+     "exam_type": "primary",
+     "year_in_name": 2005,
+     "date_listed": "২১-০৮-২০০৫",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2005-সিলেট-বিভাগ-06-21-08-2005/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 খুলনা বিভাগ 04 07 12 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "০৭-১২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-খুলনা-বিভাগ-04-07-12-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 চট্টগ্রাম বিভাগ 02 09 12 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "০৯-১২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-চট্টগ্রাম-বিভাগ-02-09-12-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 ঢাকা বিভাগ 01 10 12 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "১০-১২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-ঢাকা-বিভাগ-01-10-12-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 পিআইডি 2 17 02 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "১৭-০২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-পিআইডি-2-17-02-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 বরিশাল বিভাগ 05 06 12 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "০৬-১২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-বরিশাল-বিভাগ-05-06-12-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 রাজশাহী বিভাগ 03 08 12 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "০৮-১২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-রাজশাহী-বিভাগ-03-08-12-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2006 সিলেট বিভাগ 06 01 12 2006",
+     "exam_type": "primary",
+     "year_in_name": 2006,
+     "date_listed": "০১-১২-২০০৬",
+     "listed_marks": 35,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2006-সিলেট-বিভাগ-06-01-12-2006/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2007 খুলনা বিভাগ 04 04 09 2007",
+     "exam_type": "primary",
+     "year_in_name": 2007,
+     "date_listed": "০৪-০৯-২০০৭",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2007-খুলনা-বিভাগ-04-04-09-2007/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2007 ঢাকা বিভাগ 01 07 09 2007",
+     "exam_type": "primary",
+     "year_in_name": 2007,
+     "date_listed": "০৭-০৯-২০০৭",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2007-ঢাকা-বিভাগ-01-07-09-2007/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2007 বরিশাল বিভাগ 05 03 09 2007",
+     "exam_type": "primary",
+     "year_in_name": 2007,
+     "date_listed": "০৩-০৯-২০০৭",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2007-বরিশাল-বিভাগ-05-03-09-2007/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2007 সিলেট বিভাগ 06 02 09 2007",
+     "exam_type": "primary",
+     "year_in_name": 2007,
+     "date_listed": "০২-০৯-২০০৭",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2007-সিলেট-বিভাগ-06-02-09-2007/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2008 দড়াটানা 03 29 10 2008",
+     "exam_type": "primary",
+     "year_in_name": 2008,
+     "date_listed": "২৯-১০-২০০৮",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2008-দড়াটানা-03-29-10-2008/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2008 পদ্মা 06 26 10 2008",
+     "exam_type": "primary",
+     "year_in_name": 2008,
+     "date_listed": "২৬-১০-২০০৮",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2008-পদ্মা-06-26-10-2008/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2008 যমুনা 04 28 10 2008",
+     "exam_type": "primary",
+     "year_in_name": 2008,
+     "date_listed": "২৮-১০-২০০৮",
+     "listed_marks": 40,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2008-যমুনা-04-28-10-2008/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2010 ইছামতি 03 12 01 2010",
+     "exam_type": "primary",
+     "year_in_name": 2010,
+     "date_listed": "১২-০১-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2010-ইছামতি-03-12-01-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2010 কপোতাক্ষ 01 13 01 2010",
+     "exam_type": "primary",
+     "year_in_name": 2010,
+     "date_listed": "১৩-০১-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2010-কপোতাক্ষ-01-13-01-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2010 করতোয়া 02 08 01 2010",
+     "exam_type": "primary",
+     "year_in_name": 2010,
+     "date_listed": "০৮-০১-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2010-করতোয়া-02-08-01-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2010 তিতাস 05 09 01 2010",
+     "exam_type": "primary",
+     "year_in_name": 2010,
+     "date_listed": "০৯-০১-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2010-তিতাস-05-09-01-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2010 তিস্তা 06 11 01 2010",
+     "exam_type": "primary",
+     "year_in_name": 2010,
+     "date_listed": "১১-০১-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2010-তিস্তা-06-11-01-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2010 সুরমা 04 10 01 2010",
+     "exam_type": "primary",
+     "year_in_name": 2010,
+     "date_listed": "১০-০১-২০১০",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2010-সুরমা-04-10-01-2010/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2012 করতোয়া 04 28 02 2012",
+     "exam_type": "primary",
+     "year_in_name": 2012,
+     "date_listed": "২৮-০২-২০১২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2012-করতোয়া-04-28-02-2012/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2012 কর্ণফুলী 06 29 02 2012",
+     "exam_type": "primary",
+     "year_in_name": 2012,
+     "date_listed": "২৯-০২-২০১২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2012-কর্ণফুলী-06-29-02-2012/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2012 পদ্মা 03 24 02 2012",
+     "exam_type": "primary",
+     "year_in_name": 2012,
+     "date_listed": "২৪-০২-২০১২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2012-পদ্মা-03-24-02-2012/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2012 মেঘনা 02 25 02 2012",
+     "exam_type": "primary",
+     "year_in_name": 2012,
+     "date_listed": "২৫-০২-২০১২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2012-মেঘনা-02-25-02-2012/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2012 যমুনা 05 26 02 2012",
+     "exam_type": "primary",
+     "year_in_name": 2012,
+     "date_listed": "২৬-০২-২০১২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2012-যমুনা-05-26-02-2012/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2012 সুরমা 01 27 02 2012",
+     "exam_type": "primary",
+     "year_in_name": 2012,
+     "date_listed": "২৭-০২-২০১২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2012-সুরমা-01-27-02-2012/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2018 ১২ জেলা ৮১৬১ 04 24 04 2018",
+     "exam_type": "primary",
+     "year_in_name": 2018,
+     "date_listed": "২৪-০৪-২০১৮",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2018-১২-জেলা-৮১৬১-04-24-04-2018/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2018 ১৪ জেলা ৭২৭৭ 01 01 06 2018",
+     "exam_type": "primary",
+     "year_in_name": 2018,
+     "date_listed": "০১-০৬-২০১৮",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2018-১৪-জেলা-৭২৭৭-01-01-06-2018/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2018 ১৫ জেলা ৭১৪২ 02 26 05 2018",
+     "exam_type": "primary",
+     "year_in_name": 2018,
+     "date_listed": "২৬-০৫-২০১৮",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2018-১৫-জেলা-৭১৪২-02-26-05-2018/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2018 ২০ জেলা ৯৫৭৩ 03 11 05 2018",
+     "exam_type": "primary",
+     "year_in_name": 2018,
+     "date_listed": "১১-০৫-২০১৮",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2018-২০-জেলা-৯৫৭৩-03-11-05-2018/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ১ম ধাপ ৮৫৮৬ 24 05 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "২৪-০৫-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-১ম-ধাপ-৮৫৮৬-24-05-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ২য় ধাপ ৭৪৮৩ 31 05 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "৩১-০৫-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-২য়-ধাপ-৭৪৮৩-31-05-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ৩য় ধাপ ২৫৯৪ 01 27 06 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "২৭-০৬-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-৩য়-ধাপ-২৫৯৪-01-27-06-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ৩য় ধাপ ৩৬৯৭ 02 26 06 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "২৬-০৬-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-৩য়-ধাপ-৩৬৯৭-02-26-06-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ৪র্থ ধাপ ২৮১৫ 01 24 06 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "২৪-০৬-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-৪র্থ-ধাপ-২৮১৫-01-24-06-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ৪র্থ ধাপ ৫১২৪ 02 23 06 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "২৩-০৬-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-৪র্থ-ধাপ-৫১২৪-02-23-06-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2019 ৪র্থ ধাপ ৫১২৪ 03 22 06 2019",
+     "exam_type": "primary",
+     "year_in_name": 2019,
+     "date_listed": "২২-০৬-২০১৯",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2019-৪র্থ-ধাপ-৫১২৪-03-22-06-2019/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2022 ৩য় ধাপ ৪০২১ 03 06 2022",
+     "exam_type": "primary",
+     "year_in_name": 2022,
+     "date_listed": "০৩-০৬-২০২২",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2022-৩য়-ধাপ-৪০২১-03-06-2022/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2023 ১ম ধাপ 08 12 2023",
+     "exam_type": "primary",
+     "year_in_name": 2023,
+     "date_listed": "০৮-১২-২০২৩",
+     "listed_marks": 75,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2023-১ম-ধাপ-08-12-2023/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2024 ২য় ধাপ 02 02 2024",
+     "exam_type": "primary",
+     "year_in_name": 2024,
+     "date_listed": "০২-০২-২০২৪",
+     "listed_marks": 75,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2024-২য়-ধাপ-02-02-2024/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা 2024 ৩য় ধাপ 29 03 2024",
+     "exam_type": "primary",
+     "year_in_name": 2024,
+     "date_listed": "২৯-০৩-২০২৪",
+     "listed_marks": 75,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2024-৩য়-ধাপ-29-03-2024/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "প্রাথমিক বিদ্যালয় সহকারী শিক্ষক নিয়োগ পরীক্ষা2026 09012025",
+     "exam_type": "primary",
+     "year_in_name": 2026,
+     "date_listed": "০৯-০১-২০২৬",
+     "listed_marks": 90,
+     "url": "https://sattacademy.com/প্রাথমিক-বিদ্যালয়-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা2026-09012025/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "রেজিস্টার্ড বেসরকারি প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2011 গোলাপ 04 09 12 2011",
+     "exam_type": "registered_non_govt",
+     "year_in_name": 2011,
+     "date_listed": "০৯-১২-২০১১",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/রেজিস্টার্ড-বেসরকারি-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2011-গোলাপ-04-09-12-2011/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "রেজিস্টার্ড বেসরকারি প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2011 জবা 05 08 12 2011",
+     "exam_type": "registered_non_govt",
+     "year_in_name": 2011,
+     "date_listed": "০৮-১২-২০১১",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/রেজিস্টার্ড-বেসরকারি-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2011-জবা-05-08-12-2011/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "রেজিস্টার্ড বেসরকারি প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2011 টগর 06 10 12 2011",
+     "exam_type": "registered_non_govt",
+     "year_in_name": 2011,
+     "date_listed": "১০-১২-২০১১",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/রেজিস্টার্ড-বেসরকারি-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2011-টগর-06-10-12-2011/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "রেজিস্টার্ড বেসরকারি প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2011 শাপলা 03 07 12 2011",
+     "exam_type": "registered_non_govt",
+     "year_in_name": 2011,
+     "date_listed": "০৭-১২-২০১১",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/রেজিস্টার্ড-বেসরকারি-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2011-শাপলা-03-07-12-2011/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "রেজিস্টার্ড বেসরকারি প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2011 শিউলি 02 12 12 2011",
+     "exam_type": "registered_non_govt",
+     "year_in_name": 2011,
+     "date_listed": "১২-১২-২০১১",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/রেজিস্টার্ড-বেসরকারি-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2011-শিউলি-02-12-12-2011/all/mcq-questions",
+     "status": "discovered"
+    },
+    {
+     "name": "রেজিস্টার্ড বেসরকারি প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষা 2011 হাসনাহেনা 01 11 12 2011",
+     "exam_type": "registered_non_govt",
+     "year_in_name": 2011,
+     "date_listed": "১১-১২-২০১১",
+     "listed_marks": 80,
+     "url": "https://sattacademy.com/রেজিস্টার্ড-বেসরকারি-প্রাথমিক-সহকারী-শিক্ষক-নিয়োগ-পরীক্ষা-2011-হাসনাহেনা-01-11-12-2011/all/mcq-questions",
+     "status": "discovered"
+    }
+   ]
+  },
+  "livemcq": {
+   "terms": "Every PDF page footer warns that all Live MCQ content is copyright protected and that using it by any means without permission is a punishable offence.",
+   "format": "Public PDFs with full papers, answers and explanations. Embedded Bangla text is garbled, so it needs OCR or page reading.",
+   "papers": [
+    {
+     "year_page": 2006,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2006_pdf_download_chattogram_divison_2d174de93c.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2006,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2006_pdf_download_dhaka_division_8361863bca.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2006,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2006_pdf_download_khulna_division_7d88a48b8b.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2006,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2006_pdf_download_pedp_2_db33aa1587.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2006,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2006_pdf_download_rajshahi_division_5a0a01b325.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2006,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2006_pdf_download_sylhet_division_9deabf1a8b.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2007,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2007_pdf_download_barisal_division_5dcc13e348.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2007,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2007_pdf_download_chattogram_divison_154b9c2de7.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2007,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2007_pdf_download_dhaka_division_b6d4201a32.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2007,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2007_pdf_download_khulna_division_8682ae2243.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2007,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2007_pdf_download_rajshahi_division_7f4ccaa00f.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2007,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2007_pdf_download_sylhet_division_a63175e381.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_hemant_433974277f.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_ichamoti_ad761e7c38.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_kopotakkho_d8348a5016.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_korotoya_a2c281c907.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_shurma_fc7a17dbd9.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_spring_31da3ad471.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_tista_48b47c916c.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2010,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2010_pdf_download_titash_211a19c408.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2012,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2012_pdf_download_jamuna_3bfd6969b4.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2012,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2012_pdf_download_karnafuli_1d76cc7490.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2012,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2012_pdf_download_meghna_0038f61d4e.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2012,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2012_pdf_download_padma_7b6f600df0.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_buriganga_0a5554ddeb.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_dajla_9ed05c3ce8.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_danube_2ed329948d.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_huang_ho_8e6c49a4eb.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_jamuna_ece0f53e41.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_jhilam_823f604a86.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_korotaya_a34465264f.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_meghna_d0d5902556.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_misi_pisi_0c594569e5.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_padma_23f2969fad.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_rain_3ebb555967.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_shitalokkha_cf53f991be.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_shurma_35a305227a.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2013,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2013_pdf_download_volga_1066599b0d.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2014,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2014_pdf_download_alpha_c4dbdd4559.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2014,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2014_pdf_download_beta_c34e0a8027.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2014,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2014_pdf_download_delta_f09a9994e9.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2014,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2014_pdf_download_gamma_b9e389e205.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2015,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2015_pdf_download_1st_phase_39d96b4356.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2015,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2015_pdf_download_2nd_phase_368608e3cc.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2015,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2015_pdf_download_3rd_phase_97d1903488.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2015,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2015_pdf_download_4th_phase_9725cc1c00.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2016,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2016_pdf_download_d0b481ef5d.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2019,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2019_pdf_download_1st_phase_a1e972b8a4.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2019,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2019_pdf_download_2nd_phase_b190e3a3a7.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2019,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2019_pdf_download_3rd_phase_cfbb8710d8.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2019,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2019_pdf_download_4th_phase_ebc5924c60.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2022,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2022_pdf_download_1st_phase_bd449f34ad.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2022,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2022_pdf_download_2nd_phase_aee0c05d2f.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2022,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2022_pdf_download_3rd_phase_b1e2bed39c.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2024,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2024_pdf_download_1st_phase_9d0113cddf.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2024,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2024_pdf_download_2nd_phase_9e0ae7ad84.pdf",
+     "status": "discovered"
+    },
+    {
+     "year_page": 2024,
+     "url": "https://web.livemcq.app/uploads/primary_exam_question_solution_2024_pdf_download_3rd_phase_b40510a4e1.pdf",
+     "status": "discovered"
+    }
+   ],
+   "use": "Owner decided on 2026-10-31 to import for private local study without permission. Questions, options and answers only. Must be disclosed and cleared or removed before any deployment. See DEPLOYMENT-NOTES.md."
+  },
+  "dpe": {
+   "terms": "Official.",
+   "note": "No official question paper or answer key found in searches.",
+   "papers": []
+  }
+ }
+}

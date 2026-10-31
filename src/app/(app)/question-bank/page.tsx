@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { bn, DIFFICULTY_LABELS } from "@/lib/format";
+import { bn, DIFFICULTY_LABELS, VERIFICATION_LABELS } from "@/lib/format";
 import { requireUser } from "@/lib/supabase/server";
 
 const PAGE_SIZE = 20;
@@ -22,7 +22,7 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
 
   let query = supabase
     .from("questions")
-    .select("id, text, difficulty, collection, source_label, question_options(id, position, text), topics!inner(name_bn, subject_id)", { count: "exact" })
+    .select("id, text, difficulty, collection, source_label, verification_status, question_options(id, position, text), topics!inner(name_bn, subject_id)", { count: "exact" })
     .order("external_id")
     .range((page - 1) * PAGE_SIZE, page * PAGE_SIZE - 1);
   // Commas and brackets are PostgREST syntax, so they are removed from the search term.
@@ -38,6 +38,7 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
     text: string;
     difficulty: keyof typeof DIFFICULTY_LABELS;
     collection: keyof typeof COLLECTION_LABELS;
+    verification_status: keyof typeof VERIFICATION_LABELS | null;
     source_label: string;
     question_options: { id: string; position: number; text: string }[];
     topics: { name_bn: string };
@@ -90,6 +91,7 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
                   <Badge variant="secondary">{q.topics.name_bn}</Badge>
                   <Badge variant="outline">{DIFFICULTY_LABELS[q.difficulty]}</Badge>
                   <Badge variant="outline">{COLLECTION_LABELS[q.collection]}</Badge>
+                  {q.verification_status && <Badge variant="outline">{VERIFICATION_LABELS[q.verification_status]}</Badge>}
                 </div>
                 <BankQuestion id={q.id} options={[...q.question_options].sort((a, b) => a.position - b.position)} />
               </CardContent>

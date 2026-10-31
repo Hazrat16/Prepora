@@ -42,3 +42,6 @@ next-env.d.ts
 backups/
 test-results/
 playwright-report/
+
+# Past-paper content stays on this computer.
+content/archive/papers/
