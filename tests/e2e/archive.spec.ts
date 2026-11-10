@@ -45,3 +45,34 @@ test("a paper keeps its order and is labelled when incomplete", async ({ page })
     await admin.from("examination_papers").delete().eq("id", paper!.id);
   }
 });
+
+test("a question from a past paper shows the paper's short label", async ({ page }) => {
+  const label = `TEST-${Date.now() % 100000}`;
+  const { data: paper } = await admin
+    .from("examination_papers")
+    .insert({ slug: `badge-${Date.now()}`, short_label: label, title: "ব্যাজ টেস্ট", exam_type: "bcs", year: 1999, source_name: "Test only" })
+    .select("id")
+    .single();
+  try {
+    const { data: question } = await admin.from("questions").select("id, text").eq("collection", "practice").order("external_id").limit(1).single();
+    await admin.from("examination_paper_questions").insert({ paper_id: paper!.id, question_id: question!.id, position: 0 });
+
+    await page.goto("/register");
+    await page.getByLabel("আপনার নাম").fill("পরীক্ষার্থী");
+    await page.getByLabel("ইমেইল").fill(`badge-${Date.now()}@example.com`);
+    await page.getByLabel(/পাসওয়ার্ড/).fill("test-password-123");
+    await page.getByRole("button", { name: "অ্যাকাউন্ট তৈরি করুন" }).click();
+    await page.waitForURL("**/dashboard");
+
+    await page.goto(`/question-bank?q=${encodeURIComponent(question!.text)}`);
+    await expect(page.getByText(label, { exact: true })).toBeVisible();
+
+    // The exam filter keeps questions from that exam and drops the rest.
+    await page.goto(`/question-bank?exam=bcs&q=${encodeURIComponent(question!.text)}`);
+    await expect(page.getByText(label, { exact: true })).toBeVisible();
+    await page.goto(`/question-bank?exam=ntrca&q=${encodeURIComponent(question!.text)}`);
+    await expect(page.getByText("এই ফিল্টারে কোনো প্রশ্ন নেই")).toBeVisible();
+  } finally {
+    await admin.from("examination_papers").delete().eq("id", paper!.id);
+  }
+});

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Hind_Siliguri } from "next/font/google";
+import { Noto_Serif_Bengali } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const font = Hind_Siliguri({
+// A book-style serif for long reading. Variable font, so every weight is available.
+const font = Noto_Serif_Bengali({
   subsets: ["bengali", "latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-sans",
+  variable: "--font-bangla",
 });
 
 export const metadata: Metadata = {

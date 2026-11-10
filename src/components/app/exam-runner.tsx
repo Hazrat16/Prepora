@@ -14,6 +14,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { PaperBadges } from "@/components/app/paper-badges";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { bn, formatClock } from "@/lib/format";
@@ -23,6 +24,7 @@ type Question = {
   id: string;
   section: string;
   text: string;
+  papers: string[];
   selected: string | null;
   marked: boolean;
   options: { id: string; position: number; text: string }[];
@@ -175,6 +177,9 @@ export function ExamRunner({
             {question.section && ` · ${question.section}`}
           </p>
           <h1 className="mt-2 text-lg font-medium">{question.text}</h1>
+          {question.papers.length > 0 && (
+            <div className="mt-1 flex flex-wrap gap-1.5"><PaperBadges labels={question.papers} /></div>
+          )}
           <div role="radiogroup" className="mt-4 space-y-2">
             {question.options.map((option, i) => (
               <button

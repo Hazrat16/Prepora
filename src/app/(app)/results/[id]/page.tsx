@@ -1,12 +1,14 @@
 import { CheckCircle2, CircleSlash, XCircle } from "lucide-react";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { PaperBadges } from "@/components/app/paper-badges";
 import { BookmarkButton } from "@/components/app/question-actions";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { bn, formatMinutes } from "@/lib/format";
+import { PAPER_SELECT, paperLabels } from "@/lib/papers";
 import { accuracy } from "@/lib/scoring";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { requireUser } from "@/lib/supabase/server";
@@ -21,6 +23,7 @@ type Row = {
     text: string;
     question_options: { id: string; position: number; text: string }[];
     topics: { id: string; slug: string; name_bn: string; subjects: { slug: string; name_bn: string } };
+    examination_paper_questions: { examination_papers: { short_label: string; title: string } | null }[];
   };
 };
 
@@ -35,7 +38,7 @@ export default async function ResultsPage({ params }: { params: Promise<{ id: st
 
   const { data } = await supabase
     .from("attempt_questions")
-    .select("question_id, section_name, selected_option_id, is_correct, questions(text, question_options(id, position, text), topics(id, slug, name_bn, subjects(slug, name_bn)))")
+    .select(`question_id, section_name, selected_option_id, is_correct, questions(text, question_options(id, position, text), topics(id, slug, name_bn, subjects(slug, name_bn)), ${PAPER_SELECT})`)
     .eq("attempt_id", id)
     .order("position");
   const rows = (data ?? []) as unknown as Row[];
@@ -148,6 +151,9 @@ export default async function ResultsPage({ params }: { params: Promise<{ id: st
                   <p className="flex-1 font-medium">{bn(i + 1)}. {row.questions.text}</p>
                   <BookmarkButton questionId={row.question_id} bookmarked={saved.has(row.question_id)} />
                 </div>
+                {paperLabels(row.questions).length > 0 && (
+                  <div className="mt-1 flex flex-wrap gap-1.5"><PaperBadges labels={paperLabels(row.questions)} /></div>
+                )}
                 <ul className="mt-2 space-y-1 text-sm">
                   {options.map((o) => {
                     const correct = o.id === answer?.correct_option_id;

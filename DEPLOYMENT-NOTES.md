@@ -8,6 +8,8 @@ Past-paper questions in `content/archive/papers/` were taken from LiveMCQ's publ
 PDFs for private study on the owner's laptop, without LiveMCQ's permission. Every PDF
 page warns that using its content by any means without permission is a punishable
 offence. The owner saw that warning and decided on 2026-10-31 to use it locally only.
+On 2026-11-10 the owner extended the same local-only decision to LiveMCQ's BCS and
+NTRCA solution PDFs.
 
 Before any deployment or sharing:
 

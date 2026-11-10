@@ -1,17 +1,21 @@
 import Link from "next/link";
+import { PaperBadges } from "@/components/app/paper-badges";
 import { BankQuestion, BookmarkButton } from "@/components/app/question-actions";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { bn, DIFFICULTY_LABELS, VERIFICATION_LABELS } from "@/lib/format";
+import { PAPER_SELECT, paperLabels } from "@/lib/papers";
 import { requireUser } from "@/lib/supabase/server";
 
 const PAGE_SIZE = 20;
 const COLLECTION_LABELS = { practice: "অনুশীলন", model: "মডেল", previous_year: "পূর্ববর্তী বছর" };
 const selectClass = "h-9 rounded-lg border bg-background px-2 text-sm";
 
-type Filters = { q?: string; subject?: string; difficulty?: string; page?: string };
+const EXAM_LABELS = { primary: "প্রাথমিক", bcs: "বিসিএস", ntrca: "শিক্ষক নিবন্ধন (NTRCA)" };
+
+type Filters = { q?: string; subject?: string; difficulty?: string; exam?: string; page?: string };
 
 export default async function QuestionBankPage({ searchParams }: { searchParams: Promise<Filters> }) {
   const params = await searchParams;
@@ -20,15 +24,19 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
 
   const { data: subjects } = await supabase.from("subjects").select("id, name_bn").order("position");
 
+  const exam = params.exam && params.exam in EXAM_LABELS ? params.exam : undefined;
+  // A second, inner-joined copy of the paper link keeps only questions asked in that exam.
+  const examJoin = exam ? ", exam:examination_paper_questions!inner(examination_papers!inner(exam_type))" : "";
   let query = supabase
     .from("questions")
-    .select("id, text, difficulty, collection, source_label, verification_status, question_options(id, position, text), topics!inner(name_bn, subject_id)", { count: "exact" })
+    .select(`id, text, difficulty, collection, source_label, verification_status, question_options(id, position, text), topics!inner(name_bn, subject_id), ${PAPER_SELECT}${examJoin}`, { count: "exact" })
     .order("external_id")
     .range((page - 1) * PAGE_SIZE, page * PAGE_SIZE - 1);
   // Commas and brackets are PostgREST syntax, so they are removed from the search term.
   const search = params.q?.replace(/[%,()]/g, " ").trim();
   if (search) query = query.ilike("text", `%${search}%`);
   if (params.subject) query = query.eq("topics.subject_id", params.subject);
+  if (exam) query = query.eq("exam.examination_papers.exam_type", exam);
   if (params.difficulty === "easy" || params.difficulty === "medium" || params.difficulty === "hard") {
     query = query.eq("difficulty", params.difficulty);
   }
@@ -42,6 +50,7 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
     source_label: string;
     question_options: { id: string; position: number; text: string }[];
     topics: { name_bn: string };
+    examination_paper_questions: { examination_papers: { short_label: string; title: string } | null }[];
   }[];
 
   const { data: bookmarks } = await supabase.from("bookmarks").select("question_id");
@@ -53,6 +62,7 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
     if (params.q) next.set("q", params.q);
     if (params.subject) next.set("subject", params.subject);
     if (params.difficulty) next.set("difficulty", params.difficulty);
+    if (exam) next.set("exam", exam);
     next.set("page", String(target));
     return `/question-bank?${next}`;
   };
@@ -73,6 +83,10 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
           <option value="">সব মান</option>
           {Object.entries(DIFFICULTY_LABELS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
         </select>
+        <select name="exam" defaultValue={exam ?? ""} aria-label="পরীক্ষা" className={selectClass}>
+          <option value="">সব প্রশ্ন</option>
+          {Object.entries(EXAM_LABELS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+        </select>
         <Button type="submit" size="sm" className="h-9">খুঁজুন</Button>
       </form>
 
@@ -88,6 +102,7 @@ export default async function QuestionBankPage({ searchParams }: { searchParams:
                   <BookmarkButton questionId={q.id} bookmarked={saved.has(q.id)} />
                 </div>
                 <div className="mt-1 flex flex-wrap gap-1.5">
+                  <PaperBadges labels={paperLabels(q)} />
                   <Badge variant="secondary">{q.topics.name_bn}</Badge>
                   <Badge variant="outline">{DIFFICULTY_LABELS[q.difficulty]}</Badge>
                   <Badge variant="outline">{COLLECTION_LABELS[q.collection]}</Badge>

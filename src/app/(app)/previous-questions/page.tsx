@@ -11,6 +11,8 @@ const EXAM_TYPE_LABELS: Record<string, string> = {
   pre_primary: "প্রাক-প্রাথমিক",
   registered_non_govt: "রেজিস্টার্ড বেসরকারি",
   freedom_fighter_quota: "মুক্তিযোদ্ধা কোটা",
+  bcs: "বিসিএস প্রিলিমিনারি",
+  ntrca: "শিক্ষক নিবন্ধন (NTRCA)",
 };
 
 function discoveredPapers(): RegisterPaper[] {
@@ -32,9 +34,13 @@ export default async function PreviousQuestionsPage() {
 
   const discovered = discoveredPapers();
   const imported = papers ?? [];
-  const keys = [...new Set(discovered.map((p) => `${p.exam_type}|${p.year_in_name}`))].sort((a, b) =>
-    b.split("|")[1].localeCompare(a.split("|")[1]),
-  );
+  // Imported papers may come from exams the register does not list, such as BCS.
+  const keys = [
+    ...new Set([
+      ...discovered.map((p) => `${p.exam_type}|${p.year_in_name}`),
+      ...imported.map((p) => `${p.exam_type}|${p.year}`),
+    ]),
+  ].sort((a, b) => b.split("|")[1].localeCompare(a.split("|")[1]));
 
   const stats = [
     ["খুঁজে পাওয়া পেপার", bn(discovered.length)],

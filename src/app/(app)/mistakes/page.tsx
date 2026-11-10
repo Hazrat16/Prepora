@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { startDueReview } from "@/app/actions/attempts";
+import { PaperBadges } from "@/components/app/paper-badges";
 import { BankQuestion } from "@/components/app/question-actions";
 import { ResolveButton } from "@/components/app/resolve-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { bn, formatDate } from "@/lib/format";
+import { PAPER_SELECT, paperLabels } from "@/lib/papers";
 import { requireUser } from "@/lib/supabase/server";
 
 const selectClass = "h-9 rounded-lg border bg-background px-2 text-sm";
@@ -21,6 +23,7 @@ type Row = {
     text: string;
     question_options: { id: string; position: number; text: string }[];
     topics: { id: string; name_bn: string; subject_id: string; subjects: { name_bn: string } };
+    examination_paper_questions: { examination_papers: { short_label: string; title: string } | null }[];
   };
 };
 
@@ -35,7 +38,7 @@ export default async function MistakesPage({
   const [{ data }, { data: subjects }] = await Promise.all([
     supabase
       .from("mistake_notebook")
-      .select("question_id, wrong_count, last_wrong_at, next_review_at, resolved_at, questions(text, question_options(id, position, text), topics(id, name_bn, subject_id, subjects(name_bn)))"),
+      .select(`question_id, wrong_count, last_wrong_at, next_review_at, resolved_at, questions(text, question_options(id, position, text), topics(id, name_bn, subject_id, subjects(name_bn)), ${PAPER_SELECT})`),
     supabase.from("subjects").select("id, name_bn").order("position"),
   ]);
   const all = (data ?? []) as unknown as Row[];
@@ -136,6 +139,7 @@ export default async function MistakesPage({
                   <ResolveButton questionId={m.question_id} resolved={!!m.resolved_at} />
                 </div>
                 <div className="mt-1 flex flex-wrap gap-1.5">
+                  <PaperBadges labels={paperLabels(m.questions)} />
                   <Badge variant="secondary">{m.questions.topics.subjects.name_bn} · {m.questions.topics.name_bn}</Badge>
                   <Badge variant="outline">{bn(m.wrong_count)} বার ভুল</Badge>
                   {!m.resolved_at && <Badge variant="outline">পরের রিভিশন: {formatDate(m.next_review_at)}</Badge>}

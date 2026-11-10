@@ -215,3 +215,14 @@ step, so work continues without rewriting anything.
 - 2026-10-31: My Mistakes and spaced repetition built. Third paper imported (29-03-2024;
   the PDF says 30 March, Satt Academy says 29 March). Next step: the three 2022 papers,
   then Beginner lessons for the topics real papers ask most, then planner and analytics.
+- 2026-11-10: Bangla syllabus grown from 18 to 43 topics to cover Primary, NTRCA and
+  BCS (ণত্ব-ষত্ব, বচন, লিঙ্গ, বাচ্য, উক্তি, যতিচিহ্ন, শব্দের উৎস, পারিভাষিক শব্দ, প্রবাদ, and
+  literature by era). Papers now have a `short_label` (e.g. `BCS-47`) shown as a badge
+  on every past-paper question in the question bank, exam, results and mistakes pages.
+  The question bank filters by exam (Primary, BCS, NTRCA). Owner extended the LiveMCQ
+  local-only decision to BCS and NTRCA. Imported the Bangla sections only, read from
+  cropped page images (`scripts/crop-mcq.py`): BCS 44, 46, 47 (35 each) and NTRCA 18
+  school and college (25 each). 45th BCS PDF draws text as shapes, so it cannot be
+  cropped automatically and needs full-page reading. 2026 Primary (09-01-2026) has only
+  question images and no answers yet. Next step: BCS 43 and older, NTRCA 11-17,
+  Primary 2022.
